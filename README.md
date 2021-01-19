@@ -61,7 +61,7 @@ A `FileInfo` object contains all properties of an [`fs.stats`](https://nodejs.or
 
 ## Speed Comparison
 
-![Files](images/speedtest.png)
+![Files](https://raw.githubusercontent.com/blubitz/cup-readdir/master/images/speedtest.png)
 
 `cup-readdir` was tested against similar packages using `console.time()` for retrieval time on 10,201 files (101 subdirectories, 101 files per directory). Although it has fewer features than other packages, its performance is the fastest overall.
 
