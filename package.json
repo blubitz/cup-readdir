@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blubitz/cup-readdir.git"
+  },
   "keywords": [
     "async",
     "recursive",
@@ -16,6 +20,7 @@
   ],
   "author": "blubitz",
   "license": "MIT",
+  "homepage": "https://github.com/blubitz/cup-readdir",
   "devDependencies": {
     "mocha": "^8.2.1"
   }
