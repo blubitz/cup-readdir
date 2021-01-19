@@ -1,6 +1,6 @@
 {
   "name": "cup-readdir",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "efficient way to get an array of all file paths from directory",
   "main": "index.js",
   "scripts": {
