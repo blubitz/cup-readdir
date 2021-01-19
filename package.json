@@ -1,0 +1,22 @@
+{
+  "name": "cup-readdir",
+  "version": "1.0.0",
+  "description": "efficient way to get an array of all file paths from directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "async",
+    "recursive",
+    "readdir",
+    "promises",
+    "directory",
+    "lightweight"
+  ],
+  "author": "blubitz",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
