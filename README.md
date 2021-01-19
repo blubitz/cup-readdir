@@ -10,7 +10,7 @@ npm i cup-readdir
 
 ## Usage
 
-### `getAllFilePaths(dir)`
+#### `getAllFilePaths(dir)`
 - returns a `<Promise>`
 
 ```js
@@ -21,7 +21,7 @@ cupreaddir.getAllFilePaths('path/to/dir').then(filepaths => console.log(filepath
 
 This function returns a promise which will be resolved with an array of all file paths found recursively in the directory `dir`(`<string>`) *excluding*  directory names.
 
-### `sort(filepaths, property[, descendingOrder])`
+#### `sort(filepaths, property[, descendingOrder])`
 - returns an array of `<FileInfo>` objects
 
 ```js
@@ -52,8 +52,8 @@ async function getRecentPhotos(dir) {
 }
 ```
 
-### `<FileInfo>` object
-A `<FileInfo>` object contains all properties of an [`fs.stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object with an additional `url` property storing file path. Some of the properties are listed below.
+#### `FileInfo` object
+A `FileInfo` object contains all properties of an [`fs.stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object with an additional `url` property storing file path. Some of the properties are listed below.
 -  `url: "js/helper.js"` - path to file
 - `birthtime: Mon, 10 Oct 2021 23:24:11 GMT` - `<Date>` object storing date of file creation
 - `size: 527` - size of file in bytes
@@ -67,7 +67,7 @@ A `<FileInfo>` object contains all properties of an [`fs.stats`](https://nodejs.
 
 ## Tests
 
-`Mocha` is used for testing. Test script is located in `test/test.js`.
+Mocha is used for testing. Test script is located in `test/test.js`.
 
 ```sh
 npm test
