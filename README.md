@@ -47,7 +47,21 @@ cupr.getAllFilePaths('path/to/dir').then(paths => {
 
 This function takes in an array of file paths and returns a list of `<FileInfo>` objects sorted by the given property. `property` (`<string>`) can be any [`fs.stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) property (not `bigint` version). Sorted array of `<FileInfo>` objects are in ascending order, but the optional `descendingOrder` (`<boolean>`) parameter can be set to `true` to return that in descending order.
 
-### Example
+### FileInfo Object
+
+A `<FileInfo>` object has all properties of an [`fs.stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object with an additional `url` property storing file path. Some of the properties are shown below.
+
+```
+FileInfo {
+  url: "js/helper.js", // path to file
+  birthtime: Mon, 10 Oct 2021 23:24:11 GMT, // <Date> object storing date of file creation
+  size: 527, // size of file in bytes
+  mode: 33188 // file type and mode
+  // ...
+}
+```
+
+## Example
 
 ```js
 const cupr = require('cup-readdir')
@@ -60,20 +74,6 @@ async function getRecentPhotos(dir) {
 
   // sort list of photos in descending order of creation time
   return await cupr.sort(photos, 'birthtimeMs', true)
-}
-```
-
-### FileInfo Object
-
-A `<FileInfo>` object has all properties of an [`fs.stats`](https://nodejs.org/api/fs.html#fs_class_fs_stats) object with an additional `url` property storing file path. Some of the properties are shown below.
-
-```
-FileInfo {
-  url: "js/helper.js", // path to file
-  birthtime: Mon, 10 Oct 2021 23:24:11 GMT, // <Date> object storing date of file creation
-  size: 527, // size of file in bytes
-  mode: 33188 // file type and mode
-  // ...
 }
 ```
 
