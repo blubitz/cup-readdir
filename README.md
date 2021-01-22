@@ -1,3 +1,6 @@
+[![npm](https://img.shields.io/npm/v/cup-readdir?color=red&label=npm%20package)](https://www.npmjs.com/package/cup-readdir)
+![npm bundle size](https://img.shields.io/bundlephobia/min/cup-readdir?color=brightgreen)
+
 # cup-readdir
 
 efficient way to get an array of all file paths from directory
